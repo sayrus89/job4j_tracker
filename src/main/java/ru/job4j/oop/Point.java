@@ -35,8 +35,8 @@ public class Point {
         Point b = new Point(0, 2);
         double dist = a.distance(b);
         System.out.println("distance 2d = " + dist);
-        Point c = new Point(3, 3, 2);
-        Point d = new Point(1, 1, 1);
+        Point c = new Point(2, 1, 3);
+        Point d = new Point(2, 1, 1);
         double dist3d = c.distance3d(d);
         System.out.println("distance 3d = " + dist3d);
     }
