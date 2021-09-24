@@ -30,6 +30,8 @@ public class Triangle {
         if (this.exist(ab, bc, ac)) {
             double p = semiPerimeter(ab, bc, ac);
             rsl = Math.sqrt((p * (p - ab) * (p - bc) * (p - ac)));
+        } else {
+            rsl = -1;
         }
         return rsl;
     }
