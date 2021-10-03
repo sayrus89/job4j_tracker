@@ -4,9 +4,6 @@ public class Engineer extends Profession {
     private String diagnostic;
     private String building;
 
-    public Engineer() {
-    }
-
     public Engineer(String name, String surname,
                     String education, String birthday,
                     String diagnostic, String building) {
