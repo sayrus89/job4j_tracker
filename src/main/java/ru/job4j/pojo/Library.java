@@ -11,8 +11,8 @@ public class Library {
         books[1] = javaHeadFirst;
         books[2] = javaCore;
         books[3] = javaThinking;
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
+        for (Book bok : books) {
+            Book bk = bok;
             System.out.println(bk.getName() + " - " + bk.getPages() + " " + "pages");
         }
         System.out.println();
@@ -20,15 +20,15 @@ public class Library {
         Book tmp = books[0];
         books[0] = books[3];
         books[3] = tmp;
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
+        for (Book bok : books) {
+            Book bk = bok;
             System.out.println(bk.getName() + " - " + bk.getPages() + " " + "pages");
         }
         System.out.println();
         System.out.println("Bring out a book called - Clean code");
-        for (int index = 0; index < books.length; index++) {
-            Book bk = books[index];
-            if (books[index] == cleanCode) {
+        for (Book bok : books) {
+            Book bk = bok;
+            if ("Clean code".equals(bk.getName())) {
                 System.out.println(bk.getName());
             }
         }
