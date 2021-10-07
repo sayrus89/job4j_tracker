@@ -50,7 +50,7 @@ public class Tracker {
         boolean rsl = index != -1;
         if (rsl) {
             item.setId(id);
-            items[size] = item;
+            items[index] = item;
         }
         return rsl;
     }
