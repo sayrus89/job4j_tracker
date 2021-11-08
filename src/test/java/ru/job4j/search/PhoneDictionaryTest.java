@@ -20,8 +20,9 @@ public class PhoneDictionaryTest {
     @Test
     public void whenNotFound() {
         PhoneDictionary phones = new PhoneDictionary();
+        phones.add(new Person("Mike", "Tyson", "757575", "New York"));
         ArrayList<Person> persons = phones.find("2021");
-        ArrayList<Person> empty = new ArrayList<Person>();
+        ArrayList<Person> empty = new ArrayList<>();
         assertThat(persons, is(empty));
 
     }
