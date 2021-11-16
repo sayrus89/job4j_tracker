@@ -9,9 +9,6 @@ public class ConvertMatrix2List {
         for (int[] row : array) {
             for (int cell : row) {
                 list.add(cell);
-                /** list.addAll(List.of(cell));  немодифицируемый list создаем.
-                 * Какой метод я должен использовать.
-                 */
             }
         }
         return list;
