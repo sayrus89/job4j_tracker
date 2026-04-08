@@ -19,9 +19,7 @@ public class ReconstructPhrase {
     private String getEvenElements() {
         StringBuilder result = new StringBuilder();
         int index = 0;
-        Iterator<Character> iterator = evenElements.iterator();
-        while (iterator.hasNext()) {
-            Character character = iterator.next();
+        for (Character character : evenElements) {
             if (index % 2 == 0) {
                 result.append(character);
             }
@@ -32,9 +30,8 @@ public class ReconstructPhrase {
 
     private String getDescendingElements() {
         StringBuilder result = new StringBuilder();
-        Iterator<Character> iterator = descendingElements.descendingIterator();
-        while (iterator.hasNext()) {
-            result.append(iterator.next());
+        for (Character character : descendingElements) {
+            result.insert(0, character);
         }
 
         return result.toString();
