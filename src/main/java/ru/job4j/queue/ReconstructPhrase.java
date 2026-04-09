@@ -18,12 +18,12 @@ public class ReconstructPhrase {
 
     private String getEvenElements() {
         StringBuilder result = new StringBuilder();
-        int index = 0;
+        boolean appendNext = true;
         for (Character character : evenElements) {
-            if (index % 2 == 0) {
+            if (appendNext) {
                 result.append(character);
             }
-            index++;
+            appendNext = !appendNext;
         }
         return result.toString();
     }
