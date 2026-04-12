@@ -31,10 +31,10 @@ public class ReconstructPhrase {
     private String getDescendingElements() {
         StringBuilder result = new StringBuilder();
         for (Character character : descendingElements) {
-            result.insert(0, character);
+            result.append(character);
         }
 
-        return result.toString();
+        return result.reverse().toString();
     }
 
     public String getReconstructPhrase() {
