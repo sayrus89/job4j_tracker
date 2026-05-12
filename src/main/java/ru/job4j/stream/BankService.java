@@ -23,12 +23,8 @@ public class BankService {
         if (user == null) {
             return null;
         }
-
-        List<Account> accounts = users.get(user);
-        if (accounts == null) {
-            return null;
-        }
-        return accounts.stream()
+        return users.get(user)
+                .stream()
                 .filter(account -> account.requisite().equals(requisite))
                 .findFirst()
                 .orElse(null);
